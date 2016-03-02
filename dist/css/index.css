@@ -1,0 +1,53 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+}
+h1 {
+  padding: .5em 0 ;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.row > div {
+  float: left;
+  width: 50%;
+  padding-bottom: 50%;    
+  position: relative;
+}
+.row > div > div {
+  color: #f2f2f2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 568px) {
+  .row > div {
+    width: 33.3333%;
+    padding-bottom: 33.3333%;
+  }
+}
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  .row > div {
+    width: 10%;
+    padding-bottom: 10%;
+  }
+}
